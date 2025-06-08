@@ -31,15 +31,19 @@ This repository contains organized folders for learning, experimenting, and prac
 
 For folders like `LearnCodingModule`, `Lesson_3`, or `TwCss_inst_Version3`:
 
-```bash
+```bash cd <folder-name>
 cd <folder-name>
 npm install   # if package.json exists
-npm run dev   # for Vite-based projects
+npm run dev   # for Vite-based projects 
 
 
 For folders like Lesson_1, Lesson_2, testingBtn:
 
-Just open the index.html file in your browser.```
+Just open the index.html file in your browser.
+```
+For folders like Lesson_1, Lesson_2, testingBtn:
+
+Just open the index.html file in your browser.
 
 ## 📌 Learning Focus
 
