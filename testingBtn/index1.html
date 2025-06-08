@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Glow Button Inspired by Hulo</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        background: #0f0f1c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .button-container {
+        position: relative;
+      }
+
+      .hover-button {
+        position: relative;
+        padding: 1.5rem 6rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+        background-color: rgba(255, 255, 255, 0.9);
+        color: #000;
+        border: none;
+        border-radius: 9999px;
+        cursor: pointer;
+        z-index: 1;
+        overflow: hidden;
+      }
+
+      .glow-circle {
+        position: absolute;
+        top: 1px;
+        width: 120px;
+        height: 120px;
+        background: radial-gradient(circle, #ff5f6d, #ffc371);
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 0;
+        opacity: 0;
+        filter: blur(50px);
+        transition: opacity 0.2s ease, transform 0.2s ease;
+      }
+
+      .button-container:hover .glow-circle {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="button-container">
+      <!-- 🔁 Glow placed before button to appear behind it -->
+      <div class="glow-circle" id="glowCircle"></div>
+      <button class="hover-button" id="magicBtn">CREATE ACCOUNT</button>
+    </div>
+
+    <script>
+      const button = document.getElementById("magicBtn");
+      const glow = document.getElementById("glowCircle");
+
+      button.addEventListener("mousemove", (e) => {
+        const rect = button.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = rect.height / 2;
+
+        const maxX = rect.width - glow.offsetWidth / 2;
+        const minX = glow.offsetWidth / 2;
+        const clampedX = Math.min(Math.max(x, minX), maxX);
+
+        glow.style.left = `${clampedX}px`;
+        glow.style.top = `${y}px`;
+
+        const proximityToEdge = Math.min(x, rect.width - x);
+        const edgeBoost = Math.max(1, 1 + (30 - proximityToEdge) / 10);
+        glow.style.transform = `translate(-50%, -50%) scale(${edgeBoost})`;
+      });
+    </script>
+  </body>
+</html>

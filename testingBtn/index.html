@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hover Glow Button</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        background: #111827; /* Tailwind's gray-900 */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .button-container {
+        position: relative;
+      }
+
+      .glow-circle {
+        position: absolute;
+        width: 85px;
+        height: 100%;
+        background: linear-gradient(
+          #276bff,
+          #ff2020
+        ); /* different glow color */
+        border-radius: 50%;
+        z-index: -1;
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity 0.2s ease;
+        top: 0;
+        left: 0;
+        filter: blur(40px);
+      }
+
+      .hover-button {
+        position: relative;
+        padding: 1.5rem 6rem;
+        font-size: 1.5rem;
+        background-color: rgba(255, 255, 255, 0.845); /* Tailwind's blue-600 */
+        color: white;
+        border: none;
+        border-radius: 9999px;
+        cursor: pointer;
+        z-index: 1;
+        overflow: hidden;
+      }
+
+      .hover-button:hover + .glow-circle {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="button-container">
+      <button class="hover-button" id="magicBtn">Hover Me</button>
+      <div class="glow-circle" id="glowCircle"></div>
+    </div>
+
+    <script>
+      const button = document.getElementById("magicBtn");
+      const glow = document.getElementById("glowCircle");
+
+      button.addEventListener("mousemove", (e) => {
+        const rect = button.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+
+        // Constrain the glow within button boundaries
+        const maxX = rect.width - glow.offsetWidth;
+        const finalX = Math.min(Math.max(x - glow.offsetWidth / 2, 0), maxX);
+
+        glow.style.left = `${finalX}px`;
+      });
+
+      button.addEventListener("mouseenter", () => {
+        glow.style.opacity = "1";
+      });
+
+      button.addEventListener("mouseleave", () => {
+        glow.style.opacity = "0";
+      });
+    </script>
+  </body>
+</html>

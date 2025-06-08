@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Backgrounds & Shadows</title>
+  </head>
+  <body>
+    <!-- Background Images -->
+    <!-- https://tailwindcss.com/docs/background-image -->
+
+    <!-- <div
+      class="w-full h-screen bg-blue-500 bg-cover bg-repeat bg-center"
+      style="
+        background-image: url('https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80');
+      "
+    ></div> -->
+
+    <!-- Shadows -->
+    <!-- https://tailwindcss.com/docs/drop-shadow -->
+    <!-- I know we didn't cover flexbox, but it's just for demo purposes -->
+
+    <h1>Shadows</h1>
+
+    <div class="flex flex-wrap">
+      <div
+        class="rounded-md w-[300px] bg-red-200 mt-10 ml-4 p-3 shadow-md shadow-blue-400"
+      ></div>
+      <div
+        class="rounded-md w-[300px] bg-red-200 mt-10 ml-4 p-3 shadow-lg shadow-blue-400"
+      ></div>
+      <div
+        class="rounded-md w-[300px] bg-red-200 mt-10 ml-4 p-3 shadow-xl shadow-blue-400"
+      ></div>
+      <div
+        class="rounded-md w-[300px] bg-green-200 mt-10 ml-4 mb-4 p-3 shadow-xl shadow-red-600"
+      ></div>
+
+      <div
+        class="rounded-md w-[300px] bg-green-200 mt-10 ml-4 mb-4 p-3 shadow-inner shadow-red-600/80"
+      ></div>
+    </div>
+
+    <!-- Gradients -->
+    <!-- https://tailwindcss.com/docs/gradient-color-stops -->
+
+    <h1>Bg Gradient</h1>
+
+    <div
+      class="grid place-items-center h-[100px] rounded-md w-full bg-gradient-to-r from-yellow-400 to-teal-600 mb-4"
+    >
+      <div
+        class="w-[300px] p-2 rounded-md mt-4 text-center bg-gradient-to-r from-red-400 to-blue-600"
+      >
+        Hello
+      </div>
+    </div>
+
+    <div
+      class="mt-10 w-full bg-gradient-to-r from-red-300 via-green-400 to-blue-600 flex justify-center font-mono mb-4 round"
+    >
+      Hello
+    </div>
+  </body>
+</html>

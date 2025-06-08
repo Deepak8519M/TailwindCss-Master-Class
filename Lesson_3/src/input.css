@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+p::selection {
+  background-color: #facc15;
+  color: #1f2937;
+}

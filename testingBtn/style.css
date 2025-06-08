@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: #0f0f1c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-container {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-button {
+  position: relative;
+  padding: 1.5rem 6rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.9);
+  background: #d1d1d1;
+  color: #000;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  z-index: 2; /* Above the glow */
+  overflow: hidden;
+}
+
+.glow-circle {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(
+    circle,
+    rgba(255, 95, 109, 0.7),
+    rgba(255, 195, 113, 0.3)
+  );
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0;
+  filter: blur(35px);
+  transition: opacity 0.3s ease;
+  transform: translate(-50%, -50%) scale(1);
+}
