@@ -35,3 +35,41 @@ For folders like `LearnCodingModule`, `Lesson_3`, or `TwCss_inst_Version3`:
 cd <folder-name>
 npm install   # if package.json exists
 npm run dev   # for Vite-based projects
+
+
+For folders like Lesson_1, Lesson_2, testingBtn:
+
+Just open the index.html file in your browser.```
+
+## 📌 Learning Focus
+
+ - Tailwind setup via CDN, CLI, and PostCSS
+
+ - Core concepts: colors, spacing, font, layout
+
+ - Buttons, cards, grids, and more component designs
+
+ - Real-time practice and visual design approach
+
+
+---
+
+## 🔑 Key Highlights
+
+- Covers Tailwind CSS basics and advanced utilities
+- Includes projects built using both CDN and CLI methods
+- Focus on hands-on learning and real code examples
+- Designed for beginners and intermediate learners
+
+---
+
+## 🙋‍♂️ Author
+
+Made with ❤️ by [Deepak Mallareddy](https://github.com/Deepak8519M)
+
+---
+
+## 📄 License
+
+Open-sourced under the [MIT License](LICENSE).
+
