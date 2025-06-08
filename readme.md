@@ -41,9 +41,7 @@ For folders like Lesson_1, Lesson_2, testingBtn:
 
 Just open the index.html file in your browser.
 ```
-For folders like Lesson_1, Lesson_2, testingBtn:
 
-Just open the index.html file in your browser.
 
 ## 📌 Learning Focus
 
