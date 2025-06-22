@@ -4,7 +4,7 @@ This repository contains organized folders for learning, experimenting, and prac
 
 ---
 
-## 📁 Folders Overview
+## 📁 `Folders Overview`
 
 | Folder                   | Purpose |
 |--------------------------|---------|
@@ -18,7 +18,7 @@ This repository contains organized folders for learning, experimenting, and prac
 
 ---
 
-## 🛠️ Key Highlights
+## 🛠️ `Key Highlights`
 
 - ✅ Covers both **CDN** and **CLI** based setups
 - 🎨 Practical hands-on with **Tailwind utility classes**
@@ -27,7 +27,7 @@ This repository contains organized folders for learning, experimenting, and prac
 
 ---
 
-## 🚀 Getting Started
+## 🚀 `Getting Started`
 
 For folders like `LearnCodingModule`, `Lesson_3`, or `TwCss_inst_Version3`:
 
@@ -43,7 +43,7 @@ Just open the index.html file in your browser.
 ```
 
 
-## 📌 Learning Focus
+## 📌 `Learning Focus`
 
  - Tailwind setup via `CDN`, `CLI`, and `PostCSS`
 
@@ -56,7 +56,7 @@ Just open the index.html file in your browser.
 
 ---
 
-## 🔑 Key Highlights
+## 🔑 `Key Highlights`
 
 - Covers `Tailwind CSS basics` and `advanced utilities`
 - Includes projects built using both CDN and CLI methods
@@ -65,13 +65,13 @@ Just open the index.html file in your browser.
 
 ---
 
-## 🙋‍♂️ Author
+## 🙋‍♂️ `Author`
 
 Made with ❤️ by [Deepak Mallareddy](https://github.com/Deepak8519M)
 
 ---
 
-## 📄 License
+## 📄 `License`
 
 Open-sourced under the [MIT License](LICENSE).
 
