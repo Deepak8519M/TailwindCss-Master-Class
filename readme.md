@@ -45,20 +45,20 @@ Just open the index.html file in your browser.
 
 ## 📌 Learning Focus
 
- - Tailwind setup via CDN, CLI, and PostCSS
+ - Tailwind setup via `CDN`, `CLI`, and `PostCSS`
 
- - Core concepts: colors, spacing, font, layout
+ - `Core concepts`: colors, spacing, font, layout
 
- - Buttons, cards, grids, and more component designs
+ - Buttons, cards, grids, and more `component designs`
 
- - Real-time practice and visual design approach
+ - `Real-time practice` and visual design approach
 
 
 ---
 
 ## 🔑 Key Highlights
 
-- Covers Tailwind CSS basics and advanced utilities
+- Covers `Tailwind CSS basics` and `advanced utilities`
 - Includes projects built using both CDN and CLI methods
 - Focus on hands-on learning and real code examples
 - Designed for beginners and intermediate learners
