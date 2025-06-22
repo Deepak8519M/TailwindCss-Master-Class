@@ -1,4 +1,4 @@
-# 🎓 Tailwind CSS Master Class
+# 🎓 `Tailwind CSS Master Class`
 
 This repository contains organized folders for learning, experimenting, and practicing with **Tailwind CSS**. It follows a structured path from basic setup to essential concepts, aimed at helping you master Tailwind utility classes efficiently.
 
